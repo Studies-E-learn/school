@@ -1,0 +1,161 @@
+
+  <!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="H:\school\school.css">
+ 
+  <meta name="viewport" content="user-scalable=no,width=device-width" />
+  <script type="text/javascript">
+var rowb=1;
+var entry=document.getElementById("entry");
+entry.addEventListener("click",displayDetails());
+function displayDetails(){
+var nam=document.getElementById("nam").value;
+var numb=document.getElementById("numb").value;
+var ye=document.getElementById("ye").value;
+var il=document.getElementById("il").value;
+var addre=document.getElementById("addre").value;
+var gand=document.getElementById("gand").value;
+var age=document.getElementById("age").value;
+
+if(!nam|| !numb || !ye || !il || !addre || !gand || !age){
+  alert("please fill all the boxes");
+  return;
+}
+var display=document.getElementById("display");
+var newRow=display.insertRow(rowb);
+var cell1=newRow.insertCell(0);
+var cell2=newRow.insertCell(1);
+var cell3=newRow.insertCell(2);
+var cell4=newRow.insertCell(3);
+var cell5=newRow.insertCell(4);
+var cell6=newRow.insertCell(5);
+var cell7=newRow.insertCell(6);
+
+cell1.innerHTML=nam;
+cell2.innerHTML=numb;
+cell3.innerHTML=ye;
+cell4.innerHTML=il;
+cell5.innerHTML=addre;
+cell6.innerHTML=gand;
+cell7.innerHTML=age;
+rowb++;
+
+}
+</script>
+<style type="text/css">
+ 
+.imgg:hover{
+  color:red;
+   border-style: double;
+  border: 2px solid #75b4DE;
+  background: #D5E7F9;
+  border-radius: 14px;
+   box-shadow: 8px 4px 6px  #00c;
+
+}
+
+img {
+  width: 45%;
+  border-style: double;
+  border: 2px solid black;
+}
+#navn{
+  margin-top: 50px;
+
+}
+.input{
+  font-size: 25px;
+  color :#004d00;
+  font-weight: 700;
+  font-family: cursive;
+}
+table{
+  border-collapse: collapse;
+  width: 60%;
+  margin:50px auto;
+
+}
+table ,th,td{
+
+  border:2px solid black;
+  padding: 5px;
+}
+td{
+  font-size: 25px;
+  color: black;
+  font-weight: 400;
+  font-family: Georgia;
+}
+</style>
+
+</head>
+ 
+   <body style="background:radial-gradient(#fff,#ffd6d6)">
+
+  <div class="loge" style="float: left;">
+            <br>
+             <a href="home.html"> <img src= "img\Picture1.png" alt="image1" style="width: 100px ;height:auto;"> </a> </div>
+           
+  <div class="container">
+  <div class="navbar">
+
+            <nav align="right">
+<br>
+               <ul id="MenuItems" >
+<li><a href="H:\school\page.html"> <i class="fa fa-home"> </i>الصفحة الرئيسية  </a></li>
+                   <li><a href="ho.html"> <i class="fa fa-home"> </i>المدرسة</a></li>
+                   <li> <a href="H:\school\te.html"> <i class="fa fa-product-hunt"></i>المعلمين</a></li>
+                   <li> <a href="H:\school\table.html"><i class="fa fa-info-circle" aria-hidden="true"></i> الجدول</a></li>
+                   <li><a href="H:\school\cont.html"> <i class="fa fa-phone"></i> كورس تعليم </a></li>
+                    <li><a href="H:\school\noor.html"> <i class="fa fa-home"> </i>تسجيل الطلبه</a></li>
+                   <li> <a href=H:\school\conta.html> <i class="fa fa-product-hunt"></i>اتصل بنا </a></li>
+                   <li> <a href=H:\school\conc.html> <i class="fa fa-product-hunt"></i>استنتاج</a></li>
+               </ul>
+           </nav> </div>  </div>
+        
+        <br>
+        <br>
+<div class="img">
+ <h1 color="gray" style="text-align: center;"> تسجيل بيانات الطالب</h1>
+  <fieldset align="center"> 
+    <p align="center"><legend>  <br><br><img src="H:\school\img\b.jpg"width="10%"height="300 px"align="center  " alt="img"  align="center" >  </legend> </p >
+    <form action= "" method="">
+
+    <div id=" navn" class="input"> اسم الطالب  <br><input type="text" id="nam"/></div>
+    <div  id=" navn"class="input"> رقم هاتف ولي امر الطالب <br><input type="text" id="numb"/></div>
+    <div  id=" navn"class="input"> تاريخ الميلاد   <br><input type="text" id="ye"/></div>
+    <div  id=" navn"class="input"> الأمراض المزمنة  ان وجدت     <br><input type="text" id="il"/></div>
+    <div  id=" navn"class="input">  عنوان سكن الطالب     <br><input type="text" id="addre"/></div>
+    <div  id=" navn"class="input">الجنس <br><input type="text" id="gand"/></div>
+     <div  id=" navn"class="input">العمر <br><input type="text" id="age"/></div>
+<button  onclick="displayDetails()" type="button" id="entry" class="btn"> <h1> التسجيل   </h1></button><br><br>
+
+<table id ="display">
+  <tr>
+    <th>اسم لبطالب </th>
+    <th>هاتف ولي أمر الطالب</th>
+    <th>تاريخ الميلاد</th>
+<th>اتاريخ الميلاد</th>
+<th>عنوان سكن الطالب</th>
+<th>الجنس </th>
+<th>العمر </th>
+
+
+  </tr>
+</table>
+   
+   </form>
+
+    <hr>
+    <font size="1" color="gray"> اهلا بك في موقع مدرستنا </font>
+    </fieldset>
+    </div>
+    <div class="footer">
+            <p class="copyright"><br> <MARQUEE  BEHAVIOR="alternate" BGCOLOR="" DIRECTION="right"  LOOP="-1"  >Copyright 2021-Online Studies Group</p> <br></MARQUEE>
+
+        </div>
+
+</body>
+</html>
